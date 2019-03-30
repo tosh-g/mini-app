@@ -1,0 +1,56 @@
+@import "compass";
+
+body,html {
+  height: 100%;
+}
+
+body {
+  padding-top: 60px;
+  color : #000000;
+  margin-right: auto;
+  margin-left : auto;
+  width: 700px;
+}
+
+a {
+  text-decoration: none;
+  @extend .transition;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.transition {
+  @include transition-property(all);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(linear);
+}
+
+.btn {
+}
+
+h1,h2,h3,h4,h5,h6 {
+}
+
+.title {
+  font-weight: bold;
+}
+
+header.header {
+  background-color: orange;
+  color: #fff;
+  height: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.container {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+footer {
+}

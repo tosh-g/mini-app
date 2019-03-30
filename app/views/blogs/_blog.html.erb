@@ -1,0 +1,14 @@
+<% if user_signed_in? && current_user.id == blog.user_id %>
+  <div>
+    <ul class="list">
+      <li>
+        <%= link_to 'edit', "/blogs/#{blog.id}/edit", method: :get %>
+      </li>
+      <li>
+        <%= link_to 'delete', "/blogs/#{blog.id}", method: :delete %>
+      </li>
+    </ul>
+  </div>
+<% end %>
+
+<%= simple_format(blog.text) %>
